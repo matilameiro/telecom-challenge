@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/telecom-challenge/static/css/main.48fafa59.css",
+    "main.js": "/telecom-challenge/static/js/main.9f320a6e.js",
+    "static/js/787.9c5ddf6a.chunk.js": "/telecom-challenge/static/js/787.9c5ddf6a.chunk.js",
+    "index.html": "/telecom-challenge/index.html",
+    "main.48fafa59.css.map": "/telecom-challenge/static/css/main.48fafa59.css.map",
+    "main.9f320a6e.js.map": "/telecom-challenge/static/js/main.9f320a6e.js.map",
+    "787.9c5ddf6a.chunk.js.map": "/telecom-challenge/static/js/787.9c5ddf6a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.48fafa59.css",
+    "static/js/main.9f320a6e.js"
+  ]
+}
