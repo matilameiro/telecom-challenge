@@ -1,0 +1,30 @@
+@import "../../../Styles/variables";
+@import "../../../Styles/mixins";
+
+.header {
+  background: rgb(35, 69, 139);
+  background: linear-gradient(
+    180deg,
+    rgba(35, 69, 139, 1) 0%,
+    rgba(35, 80, 184, 1) 100%
+  );
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
+  box-shadow: $shadow;
+
+  &__container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    grid-column: 2 / span 10;
+
+    @include responsive(tablet) {
+      gap: 16px;
+    }
+
+    @include responsive(celular) {
+      gap: 8px;
+    }
+  }
+}

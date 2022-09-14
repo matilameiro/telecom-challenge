@@ -1,0 +1,30 @@
+.otherCitys {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+
+  &__city {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    color: white;
+    text-transform: capitalize;
+    background: rgb(35, 69, 139);
+    background: linear-gradient(
+      180deg,
+      rgba(35, 69, 139, 1) 0%,
+      rgba(35, 80, 184, 1) 100%
+    );
+    font-size: 1.5rem;
+    transition: ease-in-out transform 0.2s;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+    }
+  }
+}

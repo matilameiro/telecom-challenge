@@ -1,0 +1,31 @@
+.nextWeatherList {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+
+  &__weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.5rem;
+
+    &__dayname {
+      background: rgb(35, 69, 139);
+      background: linear-gradient(
+        180deg,
+        rgba(35, 69, 139, 1) 0%,
+        rgba(35, 80, 184, 1) 100%
+      );
+      text-transform: "capitalize";
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      color: whitesmoke;
+      text-transform: capitalize;
+      padding: 4px 0;
+    }
+  }
+}
