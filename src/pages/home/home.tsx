@@ -38,7 +38,7 @@ const Home = () => {
       .then((weather) => {
         setLoading(false);
         setCurrentWeather(weather);
-        console.log(weather);
+        window.scrollTo({ top: 0, behavior: "smooth" });
       })
       .catch((error) => {
         alert(error);
