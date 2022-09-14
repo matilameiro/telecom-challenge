@@ -18,7 +18,7 @@ export const otherCitys: Array<Citys> = [
     img: "san_antonio_oeste",
   },
   {
-    name: "San Carlos de Bariloche",
+    name: "Bariloche",
     position: {
       latitude: -41.134258,
       longitude: -71.308525,

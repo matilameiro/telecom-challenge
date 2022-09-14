@@ -16,6 +16,8 @@ REACT_APP_OPEN_WEATHER_API_KEY="API_KEY_GENERADO"
 - Resolver TODOs.
 - Realizar test unitarios, de integración y e2e.
 
+# Notas
+- El doble renderizado es en modo desarrollo por el StrictMode
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

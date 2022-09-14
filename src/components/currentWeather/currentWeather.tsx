@@ -18,22 +18,22 @@ const CurrentWeather = ({ weather }: Props) => {
             width={125}
             height={125}
           />
-          <span style={{ fontSize: "1.3rem", textTransform: "capitalize" }}>
+          <span className={styles.currentWeather__now__description}>
             {weather.weather[0].description}
           </span>
-          <span style={{ fontSize: "3rem" }}>{weather.main.temp}°</span>
+          <span className={styles.currentWeather__now__temp}>
+            {Math.round(weather.main.temp)}°
+          </span>
         </div>
         <div className={styles.currentWeather__description}>
           <h1>{`${weather.name}, ${weather.sys.country}`}</h1>
-          <span style={{ fontSize: "1.5rem", marginBottom: ".5rem" }}>
-            <strong>Max:</strong> {weather.main.temp_max}° /{" "}
-            <strong>Min:</strong> {weather.main.temp_min}
+          <span className={styles.currentWeather__description__temps}>
+            <strong>Max:</strong> {Math.round(weather.main.temp_max)}° /{" "}
+            <strong>Min:</strong> {Math.round(weather.main.temp_min)}°
           </span>
-          <span>
+          <span className={styles.currentWeather__description__extras}>
             <strong>Humedad:</strong> {weather.main.humidity} %
-          </span>
-          <span>
-            <strong>Viento:</strong> {weather.wind.speed} km/h
+            <strong>Viento:</strong> {Math.round(weather.wind.speed)} km/h
           </span>
         </div>
       </div>

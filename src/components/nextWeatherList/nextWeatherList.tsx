@@ -25,7 +25,15 @@ const NextWeatherList = ({ weatherList }: Props) => {
                 width={100}
                 height={100}
               ></img>
-              <span>{`${weather.main.temp_max}° / ${weather.main.temp_min}°`}</span>
+              <span className={Styles.nextWeatherList__weather__description}>
+                {" "}
+                {weather.weather[0].description}
+              </span>
+              <span
+                className={Styles.nextWeatherList__weather__temp}
+              >{`${Math.round(weather.main.temp_max)}° / ${Math.round(
+                weather.main.temp_min
+              )}°`}</span>
             </div>
           </Card>
         ))}

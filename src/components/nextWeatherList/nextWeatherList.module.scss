@@ -1,9 +1,14 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
 .nextWeatherList {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 30px;
   align-items: center;
   justify-content: center;
+  overflow-y: auto;
+  align-items: stretch;
 
   &__weather {
     display: flex;
@@ -13,11 +18,11 @@
     padding-bottom: 0.5rem;
 
     &__dayname {
-      background: rgb(35, 69, 139);
+      background: $primary_color;
       background: linear-gradient(
         180deg,
-        rgba(35, 69, 139, 1) 0%,
-        rgba(35, 80, 184, 1) 100%
+        $primary-color 0%,
+        $secondary-color 100%
       );
       text-transform: "capitalize";
       width: 100%;
@@ -27,5 +32,24 @@
       text-transform: capitalize;
       padding: 4px 0;
     }
+
+    &__description {
+      text-transform: capitalize;
+      letter-spacing: 1px;
+    }
+
+    &__temp {
+      font-size: 1.3rem;
+    }
+  }
+
+  @include responsive(tablet) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+
+  @include responsive(celular) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
   }
 }

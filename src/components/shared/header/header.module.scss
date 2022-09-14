@@ -2,12 +2,8 @@
 @import "../../../Styles/mixins";
 
 .header {
-  background: rgb(35, 69, 139);
-  background: linear-gradient(
-    180deg,
-    rgba(35, 69, 139, 1) 0%,
-    rgba(35, 80, 184, 1) 100%
-  );
+  background: $primary_color;
+  background: linear-gradient(180deg, $primary-color 0%, $secondary-color 100%);
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 30px;
@@ -18,6 +14,11 @@
     gap: 30px;
     align-items: center;
     grid-column: 2 / span 10;
+
+    &__title {
+      color: $white-color;
+      letter-spacing: 3px;
+    }
 
     @include responsive(tablet) {
       gap: 16px;
